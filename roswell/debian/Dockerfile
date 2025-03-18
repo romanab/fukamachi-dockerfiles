@@ -11,9 +11,9 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 ARG LIBCURL=libcurl4-gnutls-dev
-ENV LANG C.UTF-8
-ENV PATH $(pwd)/.roswell/bin:${PATH}
-ENV HOME $(pwd)
+ENV LANG=C.UTF-8
+ENV PATH=$(pwd)/.roswell/bin:${PATH}
+ENV HOME=$(pwd)
 
 # hadolint ignore=DL3008,DL3003
 RUN set -x; \
