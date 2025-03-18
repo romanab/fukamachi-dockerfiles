@@ -1,4 +1,4 @@
-ARG BASE_IMAGE
+ARG BASE_IMAGE=debian:bookworm-slim
 # hadolint ignore=DL3006
 FROM $BASE_IMAGE
 
